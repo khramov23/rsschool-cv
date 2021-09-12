@@ -11,7 +11,7 @@
 ## About myself:
 I began to be interested in frontend development at school. At the moment I am studying at Lobachevsky University and I believe that my desire to learn new things will help me reach heights
 
-One of my projects is the website of a company that produces spare parts for aircraft - https://авиасервис-нн.рф/
+One of my projects is the website of a company that produces spare parts for aircraft - [link](https://авиасервис-нн.рф/)
 
 ------------------
 ## Skills:
