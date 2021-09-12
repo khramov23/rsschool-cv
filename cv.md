@@ -21,3 +21,19 @@ One of my projects is the website of a company that produces spare parts for air
 - Javascript basics
 - C++ basics
 - VS Code
+
+------------------
+## Code Example:
+**Task from _CODEWARS_**:
+
+*Your task is to create a function `deepCount` that returns the number of ALL elements within an array, including any within inner-level arrays.*
+
+```javascript
+function deepCount(a){
+  let len = a.length;
+  for (let key of a)
+    if (Array.isArray(key)) len += deepCount(key);
+  return len;
+}
+```
+--------------------
