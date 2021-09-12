@@ -37,3 +37,16 @@ function deepCount(a){
 }
 ```
 --------------------
+## Courses
+
+- Wev-developer course from glo academy
+
+![Диплом](https://i.ibb.co/RYNKMyH/image.jpg);
+
+- Javascript manual in process (learn.javascript.ru)
+- RSS «JavaScript/Front-end. Stage 1» in process
+
+----------------------
+## Languages:
+- Russian (native)
+- English (Intermediate \ Upper-intermediate)
