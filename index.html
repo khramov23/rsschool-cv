@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Egor Khramov</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://kit.fontawesome.com/60278a7fb5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="header">
+
+      <div class="header__img">
+        <img src="me.jpg" alt="avatar.jpg" class="avatar">
+      </div>
+
+      <div class="header__info">
+        <h1 class="header__title">
+          Egor Khramov
+        </h1>
+        <div class="header__contacts">
+          <div class="header__contacts-item">
+            <i class="fas fa-phone"></i>
+            Phone<a href="tel:89625109971">+7 (962) 510-99-71</a>
+          </div>
+          <div class="header__contacts-item">
+            <i class="fab fa-github"></i>
+            Github<a href="https://github.com/khramov23">khramov23</a>
+          </div>
+          <div class="header__contacts-item">
+            <i class="far fa-envelope"></i>
+            Email<a href="mailto:79625109971@ya.ru">79625109971@ya.ru</a>
+          </div>
+          <div class="header__contacts-item">
+            <i class="fab fa-vk"></i>
+            Vkontakte<a href="https://vk.com/egor_khramov">egor_khramov</a>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <p class="about">
+      I began to be interested in frontend development at school. <br>
+      At the moment I am studying at Lobachevsky University and I believe that my desire to learn new things will help
+      me reach heights
+    </p>
+
+    <section class="section skills">
+      <h2 class="section__title">Skills</h2>
+
+      <div class="skills__content">
+
+        <div class="skills__block skills__block_html">HTML5</div>
+        <div class="skills__block skills__block_css">CSS3</div>
+        <div class="skills__block skills__block_git">Git, GitHub basics</div>
+        <div class="skills__block skills__block_js">Javascript basics</div>
+        <div class="skills__block skills__block_cpp">C++ basics</div>
+        <div class="skills__block skills__block_vscode">VS Code</div>
+
+      </div>
+
+    </section>
+
+    <section class="section code">
+      <h2 class="section__title code__title">Code example:</h2>
+
+      <h3 class="code__subtitle">Task from Codewars:</h3>
+
+      <p class="code__desc">Your task is to create a function <span>deepCount</span> that returns the number of ALL
+        elements within an array, including any within inner-level arrays.</p>
+
+      <pre class="hljs"
+        style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(68, 68, 68); color: rgb(221, 221, 221);"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">function</span> <span class="hljs-title" style="color: #fad6a1; font-weight: 700;">deepCount</span>(<span class="hljs-params">a</span>)</span>{
+  <span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">let</span> len = a.length;
+  <span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">for</span> (<span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">let</span> key <span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">of</span> a)
+    <span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">if</span> (<span class="hljs-built_in" style="color: #fad6a1;">Array</span>.isArray(key)) len += deepCount(key);
+  <span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">return</span> len;
+}</pre>
+      </section>
+
+    <section class="section courses">
+      <h2 class="section__title">Courses</h2>
+
+      <ul class="section__list">
+        <li class="section__list-item">
+          Wev-developer course from glo academy
+        </li>
+        <li class="section__list-item">
+          Javascript manual in process (learn.javascript.ru)
+        </li>
+        <li class="section__list-item">
+          RSS «JavaScript/Front-end. Stage 1» in process
+        </li>
+      </ul>
+    </section>
+
+    <section class="section languages">
+      <h2 class="section__title">Languages</h2>
+
+      <ul class="section__list">
+        <li class="section__list-item">
+          Russian (manual)
+        </li>
+        <li class="section__list-item">
+          English (Intermediate / Upper-interemediate)
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <a href="https://rs.school/js/" class="footer__logo">
+        <img src="rs_school_js.png" alt="RS School" width=150>
+      </a>
+      <div class="footer__year">2021</div>
+      <div class="footer__github">
+        <i class="fab fa-github"></i>
+        Github<a href="https://github.com/khramov23">khramov23</a>
+      </div>
+    </footer>
+
+  </div>
+
+
+</body>
+
+</html>
