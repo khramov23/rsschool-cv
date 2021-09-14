@@ -1,4 +1,9 @@
+html {
+  font-size: 16px;
+}
+
 body {
+  font-size: 16px;
   margin: 0;
   background-color: #fad6a1;
   font-family: 'Play', sans-serif;
@@ -6,32 +11,32 @@ body {
 
 .section {
   background-color: #fff;
-  padding: 30px 60px;
+  padding: 2rem 4rem;
 }
 
 .section__title {
   position: relative;
   margin: 0;
   color: #140F0B;
-  font-size: 48px;
+  font-size: 2.5rem;
   z-index: 2;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 0.3rem;
 }
 
 .section__title:before {
   content: '';
   position: absolute;
-  left: -10px;
+  left: -0.625rem;
   bottom: 0px;
-  width: 150px;
-  height: 30px;
+  width: 9.375rem;
+  height: 1.9rem;
   z-index: -1;
   opacity: 0.9;
   background-color: #fad6a1;
 }
 .section__list li {
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-top: 10px;
   font-style: italic;
 }
@@ -44,24 +49,23 @@ body {
 .header {
   width: 100%;
   display: flex;
-  height: 300px;
   background-color: #140F0B;
 }
 
-.header__img img {
-  max-height: 100%;
+.header__img {
+  width: 18.75rem;
 }
 
 .header__info {
-  margin-left: 30px;
-  padding-right: 30px;
+  margin-left: 2rem;
+  padding-right: 2rem;
   width: 100%;
 }
 .header__title {
   position: relative;
   color: #fad6a1;
-  font-size: 48px;
-  letter-spacing: 10px;
+  font-size: 3rem;
+  letter-spacing: 0.625rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -69,7 +73,7 @@ body {
 .header__title:after {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: -0.625rem;
   left: 0;
   width: 100%;
   background-color: #fad6a1;
@@ -86,16 +90,16 @@ body {
 }
 
 .header__contacts-item {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   width: 40%;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
 }
 
 .header__contacts-item i {
   color: #fad6a1;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .header__contacts-item a {
@@ -103,7 +107,7 @@ body {
   display: block;
   text-transform: lowercase;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   transition: all 0.2s;
 }
 
@@ -113,18 +117,17 @@ body {
 
 .content {
   background-color: #fff;
-  height: 1000px;
 }
 
 .about {
   text-align: center;
   background-color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #333;
   font-style: italic;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   margin: 0;
-  padding: 30px 60px;
+  padding: 2rem 4rem;
   border-bottom: 1px solid rgba(20, 15, 11, 0.3);;
 }
 
@@ -140,17 +143,17 @@ body {
   width: 30%;
   text-align: center;
   text-transform: uppercase;
-  font-size: 24px;
-  margin: 30px 0;
+  font-size: 1.5rem;
+  margin: 2rem 0;
   z-index: 0;
 }
 
 .skills__block:after {
   content: '';
   position: absolute;
-  bottom: -15px;
+  bottom: -1rem;
   width: 90%;
-  height: 10px;
+  height: 0.625rem;
   left: 5%;
   background-color: #ccc;
   z-index: -1;
@@ -159,9 +162,9 @@ body {
 .skills__block:before {
   content: '';
   position: absolute;
-  bottom: -15px;
+  bottom: -1rem;
   width: 50%;
-  height: 10px;
+  height: 0.625rem;
   left: 5%;
   background-color: #f5ab3d;
 }
@@ -187,22 +190,22 @@ body {
 }
 
 .code__subtitle {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .code__desc {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-style: italic;
 }
 .code__desc span {
   background-color: #eee;
-  padding: 2px 3px;
+  padding: 0.125rem 0.185rem;
 }
 .code pre {
-  font-size: 22px;
+  font-size: 1.3rem;
 }
 
 .footer {
-  padding: 20px 60px;
+  padding: 1.5rem 4rem;
   background-color: #140F0B;
   display: flex;
   justify-content: space-between;
@@ -211,12 +214,12 @@ body {
 }
 
 .footer__year {
-  font-size: 18px;
+  font-size: 1.15rem;
 }
 
 .footer__github {
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .footer__github a {
@@ -225,9 +228,11 @@ body {
   text-decoration: none;
   transition: all 0.2s;
 }
+
 .footer__github a:hover {
   color: #f5ab3d;
 }
+
 .footer__github a:active {
   color: #fad6a1;
   text-decoration: none;
