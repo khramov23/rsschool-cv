@@ -35,6 +35,11 @@ body {
   opacity: 0.9;
   background-color: #fad6a1;
 }
+
+.section__list {
+  padding-left: 2.5rem;
+}
+
 .section__list li {
   font-size: 1.5rem;
   margin-top: 10px;
@@ -213,6 +218,10 @@ body {
   color: #fff;
 }
 
+.footer__logo img {
+  width: 9.5rem;
+}
+
 .footer__year {
   font-size: 1.15rem;
 }
@@ -242,4 +251,96 @@ body {
   color: #fad6a1;
 }
 
+@media (max-width: 1200px) { 
+  html {
+    font-size: 14px;
+  }
+  .header__title {
+    font-size: 2.5rem;
+  }
+  .header__contacts-item {
+    font-size: 1.4rem;
+    margin-bottom: 1.5em;
+    width: 45%;
+  }
+}
 
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .about {
+    padding: 2rem 2rem;
+  } 
+  .section {
+    padding: 2rem 2rem;
+  }
+  .header__title {
+    font-size: 2rem;
+  }
+  .header__contacts-item {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 10px;
+  }
+  .header__img {
+    width: 15rem;
+  }
+  .header__title {
+    letter-spacing: 1.1px;
+    font-size: 1.7rem;
+  }
+  .header__contacts-item {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: left;
+  }
+  .header__contacts-item a {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  .footer__logo img {
+    width: 7rem;
+  }
+}
+
+@media (max-width: 386px) {
+  .header {
+    display: block;
+    padding-top: 2rem;
+  }
+  .header__img {
+    /* display: none; */
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  .header__info {
+    padding: 2rem 0;
+    margin: 0;
+  }
+  .header__title {
+    letter-spacing: 0.4rem;
+    margin: 0 4rem;
+    margin-bottom: 3rem;
+  }
+  .header__contacts-item {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .header__contacts-item a {
+    display: block;
+  }
+  .skills__block {
+    width: 45%;
+  }
+}
