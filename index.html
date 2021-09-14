@@ -18,6 +18,30 @@
 
 <body>
 
+  <div class="burger">
+    <div class="burger__stick"></div>
+  </div>
+
+  <nav class="mobile-menu">
+    <ul class="mobile__list">
+      <li class="mobile__list-item">
+        <a href="#about">About myself</a>
+      </li>
+      <li class="mobile__list-item">
+        <a href="#skills">Skills</a>
+      </li>
+      <li class="mobile__list-item">
+        <a href="#code">Code example</a>
+      </li>
+      <li class="mobile__list-item">
+        <a href="#courses">Courses</a>
+      </li>
+      <li class="mobile__list-item">
+        <a href="#languages">Languages</a>
+      </li>
+    </ul>
+  </nav>
+
   <div class="container">
 
     <header class="header">
@@ -50,13 +74,13 @@
 
     </header>
 
-    <p class="about">
+    <p class="about" id="about">
       I began to be interested in frontend development at school. <br>
       At the moment I am studying at Lobachevsky University and I believe that my desire to learn new things will help
       me reach heights
     </p>
 
-    <section class="section skills">
+    <section class="section skills" id="skills">
       <h2 class="section__title">Skills</h2>
 
       <div class="skills__content">
@@ -72,7 +96,7 @@
 
     </section>
 
-    <section class="section code">
+    <section class="section code" id="code">
       <h2 class="section__title code__title">Code example:</h2>
 
       <h3 class="code__subtitle">Task from Codewars:</h3>
@@ -89,7 +113,7 @@
 }</pre>
       </section>
 
-    <section class="section courses">
+    <section class="section courses" id="courses">
       <h2 class="section__title">Courses</h2>
 
       <ul class="section__list">
@@ -105,7 +129,7 @@
       </ul>
     </section>
 
-    <section class="section languages">
+    <section class="section languages" id="languages">
       <h2 class="section__title">Languages</h2>
 
       <ul class="section__list">
@@ -131,6 +155,8 @@
 
   </div>
 
+
+  <script src="main.js"></script>
 
 </body>
 

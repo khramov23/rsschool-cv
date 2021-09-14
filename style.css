@@ -9,6 +9,13 @@ body {
   font-family: 'Play', sans-serif;
 }
 
+.burger-icon {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
+
 .section {
   background-color: #fff;
   padding: 2rem 4rem;
@@ -290,6 +297,97 @@ body {
 @media (max-width: 576px) {
   html {
     font-size: 10px;
+  }
+  .burger {
+    display: block;
+    position: fixed;
+    z-index: 5;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 40px -5px #140F0B;
+    -moz-box-shadow: 0px 0px 40px -5px #140F0B;
+    box-shadow: 0px 0px 40px -5px #140F0B;
+  }
+  .burger__stick{
+    position: relative;
+    width: 30px;
+    height: 3px;
+    background-color: #140f0b;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .burger__stick:before, 
+  .burger__stick:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #140F0B;
+  }
+  .burger__stick:before {
+    top: -6px;
+    transition: all 0.2s;
+  }
+  .burger__stick:after {
+    top: 5.5px;
+    transition: all 0.2s;
+  }
+  .burger__stick_active {
+    background-color: #fff;
+    transition: all 0.2s;
+  }
+  .burger__stick_active:before {
+    top: 0;
+    transform: rotate(45deg);
+    transition: all 0.2s;
+  }
+  .burger__stick_active:after {
+    top: 0;
+    transform: rotate(135deg);
+    transition: all 0.2s;
+  }
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    display: flex;
+    transform: translateX(-100%);
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    padding: 200px 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: #140F0B;
+    opacity: 0.97;
+    box-sizing: border-box;
+    transition: all 0.2s;
+  }
+  .mobile-menu_active {
+    transition: all 0.2s;
+    transform: translateX(0%);
+  }
+  .mobile__list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobile__list-item {
+    margin-top: 5rem;
+  }
+  .mobile__list-item a {
+    font-size: 2.5rem;
+    color: #fad6a1;
+    text-decoration: none;
+    padding: 1rem 2rem;
   }
   .header {
     display: block;
