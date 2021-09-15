@@ -67,7 +67,7 @@ body {
 }
 
 .header__img {
-  width: 18.75rem;
+  height: 20rem;
 }
 
 .header__info {
@@ -106,7 +106,7 @@ body {
 }
 
 .header__contacts-item {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   width: 40%;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -220,6 +220,71 @@ body {
   font-size: 1.3rem;
 }
 
+.projects__block {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.projects__block-desc {
+  width: 50%;
+  padding-right: 3rem;
+  padding: 0 3rem;
+  box-sizing: border-box;
+}
+.projects__block-about {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: justify;
+}
+.projects__block-img {
+  display: block;
+  position: relative;
+  width: 50%;  
+}
+.projects__block-img:before {
+  opacity: 0;
+  content: 'View';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #140f0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #fad6a1;
+  transition: all 0.3s;
+}
+.projects__block-img:hover:before{ 
+  opacity: 0.8;
+}
+
+.projects__block-title {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.projects__block-img img {
+  width: 100%;
+  -webkit-box-shadow: 4px 4px 24px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 24px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 24px 0px rgba(34, 60, 80, 0.2);
+}
+
+.projects__block-tech {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.projects__block-tech span {
+  font-weight: 700;
+}
+
 .footer {
   padding: 1.5rem 4rem;
   background-color: #140F0B;
@@ -274,6 +339,10 @@ body {
     margin-bottom: 1.5em;
     width: 45%;
   }
+  .projects__block-desc {
+    padding-left: 0;
+    padding-right: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -287,11 +356,11 @@ body {
     padding: 2rem 2rem;
   }
   .header__title {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
   .header__contacts-item {
-    font-size: 1.2rem;
-    margin-top: 1rem;
+    font-size: 1.1rem;
+    margin-top: 2rem;
     width: 45%;
   }
 }
@@ -396,7 +465,7 @@ body {
     padding-top: 2rem;
   }
   .header__img {
-    width: 15rem;
+    height: 15rem;
     display: block;
     margin: 0 auto;
     border-radius: 50%;
@@ -421,6 +490,18 @@ body {
   .header__contacts-item a {
     display: block;
     margin-left: 1rem;
+  }
+  .projects__block {
+    flex-direction: column-reverse;
+  }
+  .projects__block-title {
+    font-size: 2.3rem;
+  }
+  .projects__block-img, .projects__block-desc {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
   }
   .footer__logo img {
     width: 7rem;
